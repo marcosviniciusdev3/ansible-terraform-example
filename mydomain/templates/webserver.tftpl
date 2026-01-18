@@ -1,0 +1,5 @@
+[webservers]
+%{ for w in webservers ~}
+${w.hostname} ansible_host=${w.ip} env=${w.env}
+%{ endfor ~}
+

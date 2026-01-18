@@ -1,0 +1,4 @@
+packages:
+  - python3
+runcmd:
+  - [shutdown, -h, "+60"]
